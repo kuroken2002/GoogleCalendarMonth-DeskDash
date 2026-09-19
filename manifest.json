@@ -1,0 +1,56 @@
+{
+  "$schema": "./.deskdash/manifest.schema.json",
+  "id": "google-calendar-month",
+  "name": "Google Calendar Month",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "minAppVersion": "0.2.1",
+  "description": "Google Calendar iCal monthly calendar widget",
+  "author": "",
+  "interactive": true,
+  "permissions": {
+    "http": {
+      "hosts": [
+        "calendar.google.com"
+      ],
+      "rateLimit": 10
+    }
+  },
+  "settings": [
+    {
+      "key": "calendarUrl",
+      "type": "text",
+      "label": "Google Calendar iCal URL",
+      "default": ""
+    },
+    {
+      "key": "refreshMinutes",
+      "type": "number",
+      "label": "更新間隔（分）",
+      "default": 30,
+      "min": 5,
+      "max": 1440
+    },
+    {
+      "key": "eventColor",
+      "type": "color",
+      "label": "通常予定の色",
+      "default": "#5096ff"
+    },
+    {
+      "key": "multiDayColor",
+      "type": "color",
+      "label": "複数日予定の色",
+      "default": "#4b91e1"
+    },
+    "panelStyle"
+  ],
+  "defaultSize": {
+    "w": 6,
+    "h": 6
+  },
+  "minSize": {
+    "w": 4,
+    "h": 4
+  }
+}

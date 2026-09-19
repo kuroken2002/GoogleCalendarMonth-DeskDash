@@ -1,0 +1,18 @@
+{
+  // Tells your editor how to read this folder. Nothing builds or runs it:
+  // widgets stay plain HTML/CSS/JS with no build step. This is only what
+  // makes `dd.` autocomplete and a typo turn red.
+  //
+  // "checkJs" is what surfaces mistakes in .js files. "strict" is off so you
+  // are never asked to annotate anything; turn it on if you like that.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "checkJs": true,
+    "strict": false,
+    "noEmit": true
+  },
+  "include": ["*.js", ".deskdash/**/*.d.ts"]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link
+    rel="stylesheet"
+    href="/__sdk/dd-base.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+  <div
+    id="calendarPanel"
+    class="calendar"
+    data-dd-interactive
+  >
+
+    <div class="header">
+
+      <button id="prev">
+        ‹
+      </button>
+
+      <div id="monthTitle"></div>
+
+      <button id="next">
+        ›
+      </button>
+
+    </div>
+
+    <div class="weekdays">
+
+      <div>日</div>
+      <div>月</div>
+      <div>火</div>
+      <div>水</div>
+      <div>木</div>
+      <div>金</div>
+      <div>土</div>
+
+    </div>
+
+    <div
+      id="calendarGrid"
+      class="grid"
+    >
+
+      <div
+        id="multiDayLayer"
+        class="multi-day-layer"
+      ></div>
+
+    </div>
+
+  </div>
+
+
+  <div
+    id="popupOverlay"
+    class="popup-overlay hidden"
+    data-dd-interactive
+  >
+
+    <div
+      id="dayPopup"
+      class="day-popup"
+    >
+
+      <div class="popup-header">
+
+        <div id="popupTitle"></div>
+
+        <button id="popupClose">
+          ×
+        </button>
+
+      </div>
+
+      <div id="popupEvents"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="/__sdk/widget-sdk.js"></script>
+  <script src="widget.js"></script>
+
+</body>
+
+</html>
