@@ -4,7 +4,7 @@ A monthly Google Calendar widget for DeskDash.
 
 Display your Google Calendar events directly on your Windows desktop using an iCal / ICS calendar URL.
 
-![Google Calendar Month for DeskDash](screenshot.png)
+![Google Calendar Month for DeskDash](snapshot.png)
 
 ---
 
